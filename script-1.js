@@ -188,7 +188,7 @@ function get_next_ep ()
     for (var i = 0; i < li_ep_size; i++)
     {
         var li_ep = ul_ep.getElementsByTagName ("li")[i];
-        if (li_ep.hasAttribute ("class"))
+        if (li_ep.classList.contains("current"))
         {
             this_ep = i+1;
             break;
